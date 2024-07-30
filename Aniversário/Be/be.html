@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário!</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ffccff, #cc99ff);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 10s infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #4d004d;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: auto;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            font-size: 2em;
+            color: #ff3399;
+            font-family: 'Brush Script MT', cursive;
+            margin: 20px 0;
+            animation: headerAnimation 3s infinite;
+        }
+        @keyframes headerAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .intro {
+            font-size: 1.5em;
+            color: #ff6699;
+            margin: 20px 0;
+            animation: introAnimation 5s infinite;
+        }
+        @keyframes introAnimation {
+            0% { opacity: 0; transform: translateY(-20px); }
+            50% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(20px); }
+        }
+        .message {
+            font-size: 1.2em;
+            position: relative;
+            margin: 20px 0;
+            animation: messageAnimation 10s infinite;
+        }
+        @keyframes messageAnimation {
+            0% { opacity: 0; }
+            25% { opacity: 1; }
+            75% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .footer {
+            font-size: 1em;
+            color: #993366;
+            margin-top: 30px;
+            animation: footerAnimation 3s infinite;
+        }
+        @keyframes footerAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .flower {
+            width: 80px;
+            height: 80px;
+            background: url('https://example.com/flower.png') no-repeat center center;
+            background-size: contain;
+            display: inline-block;
+            animation: flowerAnimation 5s infinite;
+        }
+        @keyframes flowerAnimation {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
+        .video-container {
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            .header {
+                font-size: 1.5em;
+            }
+            .intro {
+                font-size: 1.2em;
+            }
+            .message {
+                font-size: 1em;
+            }
+            .footer {
+                font-size: 0.9em;
+            }
+            .flower {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="intro">Eu te amo mais que tudo.</div>
+        <div class="video-container">
+            <video width="100%" controls>
+                <source src="video/Feliz aniversário, be!.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+        <div class="header">Feliz Aniversário!</div>
+        <div class="flower"></div>
+        <div class="message">
+            <p>Eu te amo mais que tudo nessa vida, eu quero você no meu lado sempre! Eu peço desculpas pelo o que eu fiz, eu quero ficar com você pelo resto da minha vida, você é a pessoa que me faz feliz, a pessoa que eu escolhi passar o resto da minha vida com você. Eu quero que você seja a mãe dos meus filhos(as), você é a minha noiva, minha mulher, minha casada, minha gata, metade da minha laranja, você é a calcinha do meu cu, minha metade, a minha lua, a minha ladybug, a minha Vitória Gomes.</p>
+            <p>Feliz aniversário, minha gata perfeita, eu te amo muito.</p>
+        </div>
+        <div class="flower"></div>
+        <div class="footer">Com todo o meu amor, Fabrício Machado.</div>
+    </div>
+</body>
+</html>
